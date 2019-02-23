@@ -1,0 +1,42 @@
+run.config:
+  engine: ruby
+  engine.config:
+    runtime: ruby-2.4
+    postgresql_client_version: "9.6"
+
+
+  extra_packages:
+    - nodejs
+    - pkgconf
+    - libxml2
+    - libxslt
+    - nginx
+
+  cache_dirs:
+    - node_modules
+
+  extra_steps:
+    - yarn
+
+data.quick_blog_db:
+  image: nanobox/postgresql:9.6
+
+web.main:
+  start:
+    nginx: nginx -c /app/config/nginx.conf
+    puma: bundle exec puma -C /app/config/puma.rb
+
+deploy.config:
+  before_live:
+    web.dashboard:
+      - bundle exec rake db:setup_or_migrate
+  extra_steps:
+    - bundle exec rake assets:precompile
+
+web.dashboard:
+  start: bundle exec rails s
+  writable_dirs:
+    - tmp
+    - log
+  log_watch:
+    dashboard[production]: log/production.log

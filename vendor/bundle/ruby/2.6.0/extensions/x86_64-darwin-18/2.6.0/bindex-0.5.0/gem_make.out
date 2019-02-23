@@ -1,0 +1,15 @@
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/quick_blog/vendor/bundle/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+/Users/matthewgaudio/.rvm/rubies/ruby-2.6.1/bin/ruby -I /Users/matthewgaudio/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0 -r ./siteconf20190223-62869-m1r663.rb extconf.rb
+creating Makefile
+
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/quick_blog/vendor/bundle/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/quick_blog/vendor/bundle/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/quick_blog/vendor/bundle/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20190223-62869-uc2q3b/bindex

@@ -1,0 +1,15 @@
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/quick_blog/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.0/ext/bootsnap
+/Users/matthewgaudio/.rvm/rubies/ruby-2.6.1/bin/ruby -I /Users/matthewgaudio/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0 -r ./siteconf20190223-62869-1pcelrt.rb extconf.rb
+creating Makefile
+
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/quick_blog/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.0/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/quick_blog/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.0/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/quick_blog/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.0/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20190223-62869-vd8s72/bootsnap
