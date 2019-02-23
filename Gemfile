@@ -34,6 +34,8 @@ gem 'clearance'
 gem 'administrate'
 gem 'semantic-ui-sass'
 gem 'jquery-rails'
+gem 'owlcarousel-rails'
+
 
 
 

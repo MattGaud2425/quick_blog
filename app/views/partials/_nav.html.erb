@@ -13,41 +13,41 @@
       <%= link_to(image_tag("logo1", class: "logo"), root_path) %>
     </div>
     <div class="logo-header">
-      Brian's Blog; Welcome to the Warehouse
-
+      Brian's Blog
     </div>
   </div>
   <div class="mid-nav">
     <div class="nav-item">
-      <button class="dropdown">
+      <div class="dropdown">
         Media
-      </button>
+      </div>
       <ul>
         <li>Podcasts</li>
         <li>Videos</li>
         <li>Blog Posts</li>
       </ul>
     </div>
-    <div class="nav-item">
-      About
+    <div class="nav-item-search">
+      <div class="ui right aligned category search">
+        <div class="ui icon input">
+          <input class="prompt" type="text" placeholder="Search For Content...">
+          <i class="search icon"></i>
+        </div>
+        <div class="results"></div>
+      </div>
     </div>
-    <div class="nav-item">
-      Contact
-    </div>
-    <div class="nav-item">
-      More
-    </div>
+
 
   </div>
   <div class="right-nav">
-    <button class="dropdown">
+    <div class="dropdown">
       <% if signed_in? %>
         Signed in as: <%= current_user.email %>
         <%= button_to 'Sign out', sign_out_path, method: :delete %>
       <% else %>
         <%= link_to 'Sign up | Log in', sign_in_path, class: "sign-up-button" %>
       <% end %>
-    </button>
+    </div>
     <ul>
       <li>Profile</li>
       <li>Dashboard</li>
