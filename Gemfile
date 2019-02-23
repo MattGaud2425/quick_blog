@@ -32,6 +32,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'pg'
 gem 'clearance'
 gem 'administrate'
+gem 'semantic-ui-sass'
+gem 'jquery-rails'
+
 
 
 # Use ActiveStorage variant

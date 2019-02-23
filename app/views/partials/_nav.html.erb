@@ -1,0 +1,41 @@
+<% if signed_in? %>
+  Signed in as: <%= current_user.email %>
+  <%= button_to 'Sign out', sign_out_path, method: :delete %>
+<% else %>
+  <%= link_to 'Sign in', sign_in_path %>
+<% end %>
+
+<div id="flash">
+  <% flash.each do |key, value| %>
+    <div class="flash <%= key %>"><%= value %></div>
+  <% end %>
+</div>
+
+
+<nav class="nav">
+  <div class="left-nav">
+    <div class="logo">
+      
+    </div>
+  </div>
+  <div class="mid-nav">
+    <button class="dropdown">
+      Dropdown
+    </button>
+    <ul>
+      <li>Podcasts</li>
+      <li>Videos</li>
+      <li>Blog Posts</li>
+    </ul>
+  </div>
+  <div class="right-nav">
+    <button class="dropdown">
+      Dropdown
+    </button>
+    <ul>
+      <li>Profile</li>
+      <li>Dashboard</li>
+      <li>Sign out</li>
+    </ul>
+  </div>
+</nav>
